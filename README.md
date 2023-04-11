@@ -126,5 +126,6 @@ I would like to thank Microverse for the learning materials and technical suppor
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
+<!-- https://www.db-fiddle.com/ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
