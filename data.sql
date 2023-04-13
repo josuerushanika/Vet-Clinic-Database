@@ -29,8 +29,34 @@ INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_
 (11, 'Ditto', '2022-05-14', 4, true, 22);
 
 
+--Insert into owners--
+INSERT INTO owners ( full_name, age)
+VALUES ('Sam Smith', 34),
+       ('Jennifer Orwell',19),
+       ('Bob',45),
+       ('Meloy Pon', 77),
+       ('Dean Winchester',14),
+       ('Jodie Whittaker',38);
+
+--Insert into species--
+       INSERT INTO species ( name)
+VALUES ('Pokemon'),
+       ('Digimon');
+	   SELECT * FROM species;
 
 
+-- Modify inserted animals so it includes the species_id value --
+UPDATE animals SET species_id = 2 WHERE name like '%mon';
+UPDATE animals SET species_id = 1 WHERE species_id IS NULL;
+
+-- Modify inserted animals to include owner information (owner_id) --
+
+UPDATE animals SET owner_id = 1 WHERE name = 'Agumon';
+UPDATE animals SET owner_id = 2 WHERE name = 'Gabumon' OR name = 'Pikachu';
+UPDATE animals SET owner_id = 3 WHERE name = 'Devimon' OR name =  'Plantmon';
+UPDATE animals SET name ='Squirtle' WHERE id = 7;
+UPDATE animals SET owner_id = 4 WHERE name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom';
+UPDATE animals SET owner_id = 5 WHERE name = 'Angemon' OR name = 'Boarmon';
 
 
  
