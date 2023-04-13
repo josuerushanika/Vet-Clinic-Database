@@ -24,3 +24,11 @@ CREATE TABLE species (
   id integer PRIMARY KEY NOT NULL,
   name VARCHAR(70)
 );
+
+--MODIFIER TABLE--
+ALTER TABLE animals DROP COLUMN species;
+
+--Add column species_id which is a foreign key referencing species table--
+ALTER TABLE animals ADD COLUMN species_id INT;
+ADD CONSTRAINT fk_species_id FOREIGN KEY (species_id) REFERENCES species(id);
+
