@@ -1,3 +1,5 @@
+
+
 CREATE TABLE animals (
     id integer primary key NOT NULL,
     name varchar(50),
@@ -7,3 +9,18 @@ CREATE TABLE animals (
     weight_kg decimal
 );
 ALTER TABLE animals ADD species VARCHAR(250);
+
+--Create table owners--
+
+CREATE TABLE owners (
+  id integer PRIMARY KEY,
+  full_name VARCHAR (80) NOT NULL,
+  age integer NOT NULL
+);
+
+--Create a table named species--
+
+CREATE TABLE species (
+  id integer PRIMARY KEY NOT NULL,
+  name VARCHAR(70)
+);
