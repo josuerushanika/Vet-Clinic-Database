@@ -23,11 +23,13 @@
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
-
+  
 # 📖 [Vet_clinic database] <a name="about-project"></a>
 
 
 **[Vet_clinic database]** is a relational database used to create the database for a vet clinic. I created a table to store animals' information, insert some data into it, and query it.
+
+Digram link https://drawsql.app/teams/josue-rushanika/diagrams/vet-clinic
 
 ## 🛠 Built With <a name="built-with"></a>
 
