@@ -24,7 +24,7 @@ CREATE TABLE medical_histories (
 CREATE TABLE treatments (
     id serial  PRIMARY KEY,
     type VARCHAR(100),
-    name VARCHAR(100),
+    name VARCHAR(100)
 );
 
 CREATE TABLE invoice_items (
@@ -41,7 +41,6 @@ CREATE TABLE invoice_items (
 CREATE TABLE medical_histories_treatments (
   medical_history_id INT,
   treatment_id INT,
-  PRIMARY KEY medical_history_treatment_id INT,
   FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id),
   FOREIGN KEY (treatment_id) REFERENCES treatments(id)
 );
